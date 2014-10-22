@@ -3,7 +3,7 @@
 
 	<groupId>com.stackify</groupId>
 	<artifactId>stackify-metrics-aspectj</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	
 	<name>Stackify Metrics AspectJ AOP Extension</name>
 	<description>AspectJ AOP Extension for the Stackify Metrics API</description>
@@ -131,7 +131,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<execute></execute>
+										<execute />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
