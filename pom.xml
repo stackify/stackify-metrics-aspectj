@@ -3,7 +3,7 @@
 
 	<groupId>com.stackify</groupId>
 	<artifactId>stackify-metrics-aspectj</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.3</version>
 	
 	<name>Stackify Metrics AspectJ AOP Extension</name>
 	<description>AspectJ AOP Extension for the Stackify Metrics API</description>
@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>com.stackify</groupId>
 			<artifactId>stackify-metrics</artifactId>
-			<version>1.0.5-SNAPSHOT</version>
+			<version>1.0.5</version>
 		</dependency>
 		
 		<dependency>
