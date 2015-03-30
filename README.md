@@ -15,6 +15,44 @@ Sign Up for a Trial:
 
 http://www.stackify.com/sign-up/
 
+## Installation
+
+Add it as a maven dependency:
+```xml
+<dependency>
+    <groupId>com.stackify</groupId>
+    <artifactId>stackify-metrics-aspectj</artifactId>
+    <version>INSERT_LATEST_MAVEN_CENTRAL_VERSION</version>
+</dependency>
+```
+
+Configure the aspectj-maven-plugin to compile-time weave the stackify-metrics-aspectj aspects into your project:
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>aspectj-maven-plugin</artifactId>
+            <configuration>
+                <aspectLibraries>
+                    <aspectLibrary>
+                        <groupId>com.stackify</groupId>
+                        <artifactId>stackify-metrics-aspectj</artifactId>
+                    </aspectLibrary>
+                </aspectLibraries>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>compile</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+```
+
 ## Usage
 
 There are four different types of metrics: 
@@ -86,44 +124,6 @@ See https://github.com/stackify/stackify-metrics#configuration
 // where v is the start time of the method annotated
 @CounterAndTimer(category = "MyCategory", name = "MyCounterAndTimer")
 ...
-```
-
-## Installation
-
-Add it as a maven dependency:
-```xml
-<dependency>
-    <groupId>com.stackify</groupId>
-    <artifactId>stackify-metrics-aspectj</artifactId>
-    <version>1.1.0</version>
-</dependency>
-```
-
-Configure the aspectj-maven-plugin to compile-time weave the stackify-metrics-aspectj aspects into your project:
-```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>aspectj-maven-plugin</artifactId>
-            <configuration>
-                <aspectLibraries>
-                    <aspectLibrary>
-                        <groupId>com.stackify</groupId>
-                        <artifactId>stackify-metrics-aspectj</artifactId>
-                    </aspectLibrary>
-                </aspectLibraries>
-            </configuration>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>compile</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
 ```
 
 ## License
