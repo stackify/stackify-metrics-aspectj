@@ -1,6 +1,7 @@
 stackify-metrics-aspectj
 ========================
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.stackify/stackify-metrics-aspectj.svg)](http://mvnrepository.com/artifact/com.stackify/stackify-metrics-aspectj)
 [![Build Status](https://travis-ci.org/stackify/stackify-metrics-aspectj.png)](https://travis-ci.org/stackify/stackify-metrics-aspectj)
 [![Coverage Status](https://coveralls.io/repos/stackify/stackify-metrics-aspectj/badge.png?branch=master)](https://coveralls.io/r/stackify/stackify-metrics-aspectj?branch=master)
 
