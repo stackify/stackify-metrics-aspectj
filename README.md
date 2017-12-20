@@ -9,7 +9,7 @@ AspectJ AOP Extension for the Stackify Metrics API (https://github.com/stackify/
 
 Custom Metrics Overview:
 
-http://docs.stackify.com/m/7787/l/232533
+http://support.stackify.com/custom-metrics-overview/
 
 Sign Up for a Trial:
 
